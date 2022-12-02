@@ -34,14 +34,16 @@ body {
 .main{
   background: lightgreen;
   height: 50vh;
-  display: flow-root;
-  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  /* display: flow-root;
+  padding: 0 15px; */
 }
 
-.group{
+/* .group{
   margin: 0 15px;
   float: left;
-}
+} */
 
 .group1{
   background-color: violet;
