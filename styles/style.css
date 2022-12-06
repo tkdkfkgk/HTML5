@@ -3,9 +3,11 @@
 
 /* 숨김 콘텐츠 */
 .a11y-hidden{
-  background-color: yellow;
   position: absolute;
-  top: -9999em;
+  width: 1px;
+  height: 1px; /* overflow 현상이 됨 */
+  overflow: hidden; /* 뭔가를 넘어갈 때 스크롤바로 처리할지 감출지 */
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 /* 기본 스타일 */
