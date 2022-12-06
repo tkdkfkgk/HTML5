@@ -2,8 +2,14 @@
 @import url(./reset.css);
 
 /* 기본 스타일 */
-*, *::before, *::after{
+*, 
+*::before, 
+*::after{
   box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
 }
 
 /* 링크 스타일 */
@@ -14,6 +20,8 @@ a{
 
 /* 본문 스타일 */
 body {
+  /* em, rem 단위 사용해보기 */
+  font-size: 1.4rem;
   color: #212121;
   background: #ccc;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -46,6 +54,7 @@ body {
 .member{
   text-align: right;
   padding: 4px 0;
+  text-transform: uppercase;
   /* position 속성을 활용하여 .member 영역을 오른쪽으로 10px 만큼 이동하기 */
   /* position: relative;
   right: -10px; */
