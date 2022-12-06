@@ -37,8 +37,7 @@ body {
 .header{
   background: #fff;
   padding: 0 30px;
-  height: 15vh;
-  border-radius: 0 0 15px 15px / 0 0 50px 50px; /* 라운딩 효과 */
+  border-radius: 0 0 15px 15px; /* 라운딩 효과 */
   position: relative;
 }
 
