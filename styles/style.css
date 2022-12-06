@@ -105,8 +105,8 @@ body {
       #ef9126 100%
     );
     border-radius: 0 0 5px 5px;
-    display: flow-root;
     padding-left: 230px;
+    height: 47px; /* 를 주면 flow-root가 필요없음 */
 }
 
 /* .menu-item:first-child{
@@ -114,8 +114,19 @@ body {
 } */
 
 .menu-item{
-  background-color: aqua;
-  float: left;
+  float: left; /* 공간이 충분하지 않으면 줄바꿈 */
+  border-left: 2px solid #fff;
+}
+
+.menu-button{
+  border: 0;
+  background: transparent;
+  padding: 0 23px;
+  line-height: 45px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
 
 .sub-menu{
