@@ -214,12 +214,14 @@ body {
 @keyframes moveEffect{
   0%{
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.2);
+    /* color: rgba(0, 0, 0, 0.2); */
+    color: hsla(0, 0%, 0%, 0);
     transform: translate(0, 0);
   }
   100%{
     font-size: 24px;
-    color: rgba(0, 0, 0, 1);
+    /* color: rgba(0, 0, 0, 1); */
+    color: hsla(0, 0%, 0%, 1);
     transform: translate(400px, 75px);
   }
 }
@@ -235,8 +237,11 @@ body {
   background-color: coral;
   animation-name: moveEffect;
   animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   display: inline-block; /* 글자 크기만큼 줄여줘서 transform 했을 때 상자가 튀어나오는걸 방지 */
+  /* position: absolute; */
+  
 }
 /* 메인 */
 .main {
