@@ -299,7 +299,6 @@ body {
 }
 
 .group1 {
-  /* background-color: #ccc; */
   width: 250px;
 }
 
@@ -326,8 +325,6 @@ body {
   font-size: 15px;
   font-weight: 700;
   text-indent: 10px;
-  /* padding-left: 10px;
-  padding-bottom: 10px; */
 }
 
 .login-form {
@@ -376,15 +373,25 @@ body {
 
 .sign {
   background-color: #fff;
-  padding: 0 10px 10px 10px;
+  padding: 4px 10px;
   border-radius: 0 0 5px 5px;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 
-/* .sign::before {
-  content: "\e801";
-} */
+.sign a {
+  display: block;
+  padding: 6px 0;
+  letter-spacing: -1px;
+}
+
+.sign a::before {
+  content: "\e802";
+  font-family: "fontello";
+  color: coral;
+  margin-right: 8px;
+}
 
 /* 슬로건 */
 .slogan {
