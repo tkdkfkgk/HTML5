@@ -3,7 +3,8 @@
 @import url(./reset.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden, 
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -271,6 +272,7 @@ body {
 }
 
 .visual-text{
+  background-color: coral;
   font-family: Georgia, 'Times New Roman', Times, serif;
   /* animation-name: moveEffect;
   animation-duration: 400ms;
@@ -280,15 +282,16 @@ body {
   /* 글자 크기만큼 줄여줘서 transform 했을 때 상자가 튀어나오는걸 방지 */
   /* display: inline-block;  */
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   
 }
 /* 메인 */
 .main {
-  background: lightgreen;
-  height: 50vh;
+  background: #fff;
+  min-height: 450px;
   display: flow-root;
-  padding: 0 15px;
+  padding: 30px 15px;
+  border-radius: 15px 15px 0 0;
 }
 
 .group {
@@ -297,9 +300,10 @@ body {
 }
 
 .group1 {
-  background-color: violet;
+  /* background-color: #ccc; */
   width: 250px;
 }
+
 .group2 {
   background-color: salmon;
   width: 380px;
@@ -308,6 +312,80 @@ body {
   background-color: gold;
   width: 190px;
 }
+
+/* 로그인 */
+.login {
+  box-shadow: 5px 5px 0 0 #ccc;
+  background: orange radial-gradient(circle at right top, orange, orangered);
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.login-title {
+  color: #ff0;
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 10px;
+  /* padding-left: 10px;
+  padding-bottom: 10px; */
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 10px 10px 0 10px;
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.login-form fieldset {
+  position: relative;
+}
+
+.user-email {
+  background-color: skyblue;
+}
+
+.user-pw {
+  background-color: lime;
+}
+
+.login-form label {
+  background-color: salmon;
+  width: 4em;
+  display: inline-block;
+}
+
+.login-form input {
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.login-button {
+  /* background-color: orangered;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px; */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sign {
+  background-color: #fff;
+  padding: 0 10px 10px 10px;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .sign::before {
+  content: "\e801";
+} */
 
 /* 슬로건 */
 .slogan {
