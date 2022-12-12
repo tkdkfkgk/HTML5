@@ -464,6 +464,52 @@ body {
 }
 */
 
+/* 웹 관련 용어 */
+.term {
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+
+.term-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.term-list {
+  background: yellow;
+  margin-top: 10px;
+}
+
+.term-list div {
+  margin-top: 10px;
+  background: pink;
+  display: flow-root;
+}
+
+.term-list-subject {
+  background-color: lime;
+  float: right;
+  width: 140px;
+}
+
+.term-list-thumbnail {
+  background-color: purple;
+  float: left;
+}
+
+.term-list-thumbnail img {
+  vertical-align: middle;
+}
+
+.term-list-brief {
+  background-color: coral;
+  float: right;
+  width: 145px;
+}
+
 /* 슬로건 */
 .slogan {
   background: skyblue;
