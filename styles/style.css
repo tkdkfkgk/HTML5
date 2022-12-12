@@ -282,8 +282,8 @@ body {
   /* display: inline-block;  */
   position: relative;
   /* z-index: 1; */
-  
 }
+
 /* 메인 */
 .main {
   background: #fff;
@@ -378,6 +378,39 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  /* font-size: 0;
+
+  display: flow-root; */
+}
+/* 
+.sign li {
+  font-size: 14px;
+  display: inline-block;
+  width: 50%;
+}
+
+.sign li:first-child {
+  width: 35%;
+}
+
+.sign li:last-child {
+  width: 65%;
+  text-align: right;
+} */
+
+.sign li:first-child {
+  float: left;
+}
+
+/* .sign li:first-child {
+  float: left;
+  display: inline-block;
+  padding: 10px 0;
+  font-weight: 400;
+} */
+
+.sign li:last-child {
+  float: right;
 }
 
 .sign a {
@@ -392,6 +425,44 @@ body {
   color: coral;
   margin-right: 8px;
 }
+
+/* 유효성 검사 배너 */
+.validation-list {
+  margin-top: 25px;
+}
+
+.validation-list li {
+  margin-top: 10px;
+}
+
+.validation-list a {
+  display: block;
+  background: url("./images/validation_icon.png") no-repeat 25px 50%, #ccc linear-gradient(to bottom, #ccc, #eee);
+  padding: 8px 15px 8px 55px;
+  border-radius: 30px;
+  border: 1px solid #aaa;
+}
+
+.validation-list a:hover, 
+.validation-list a:focus {
+  color: #f00;
+}
+
+/* .validation-list a::before {
+  content: url("./images/validation_icon.png");
+  vertical-align: middle;
+} */
+
+
+/* .validation-list li:first-child {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  background: url(./images/validation_icon.png) no-repeat 15px 10px,
+  #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%) 
+    repeat 0 0;
+}
+*/
 
 /* 슬로건 */
 .slogan {
