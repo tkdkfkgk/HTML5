@@ -485,6 +485,7 @@ body {
 .term-list div {
   margin-top: 10px;
   display: flow-root;
+  /* overflow: hidden; */
 }
 
 .term-list-subject, .term-list-brief {
