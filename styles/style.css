@@ -540,7 +540,7 @@ body {
   padding-right: 10px;
 }
 .form-group-label {
-  flex-shrink: 0;
+  flex-shrink: 0; /* 크기가 크면 축소할거야 */
   margin-right: 10px;
 }
 .form-group-input {
