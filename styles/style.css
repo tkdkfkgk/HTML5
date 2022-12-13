@@ -1,6 +1,7 @@
 @import url(./fontello.css);
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./module.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden, 
@@ -644,7 +645,6 @@ body {
 }
 
 .news-title {
-  color: #e85e2c;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -674,9 +674,14 @@ body {
 
 .news-item-thumbnail {
   position: absolute;
-  top: 0;
+  top: 3px;
   left: 0;
   text-align: center;
+}
+
+.news-item-thumbnail img {
+  box-shadow: 0 15px 10px 5px #ccc;
+  margin-bottom: 15px;
 }
 
 .news-more {
@@ -685,6 +690,15 @@ body {
   right: -8px;
   padding: 8px;
 }
+
+/* 신규이벤트 및 관련 사이트 */
+/* .gradient-effect {
+}
+
+.accent-color {
+  color: #e85e2c;
+} */
+
 
 /* 슬로건 */
 .slogan {
