@@ -694,17 +694,21 @@ body {
 /* 신규이벤트 및 관련 사이트 */
 .event {
   border-bottom: 1px solid #aaa;
-  position: relative;
+  /* position: relative; */
+}
+
+.event-title {
+  display: inline-block;
 }
 
 .event-button-wrapper {
-  background-color: yellow;
   height: 20px;
   overflow: hidden;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   gap: 5px;
+  float: right;
 }
 
 /* IR 기법 -> Image Replacement 텍스트 안보이게 */
@@ -729,6 +733,10 @@ body {
   margin: 10px 0;
 }
 
+.event-thumbnail img {
+  border: 1px solid #aaa;
+}
+
 .event-brief {
   line-height: 1.5;
 }
@@ -739,7 +747,37 @@ body {
 
 .related-list {
   background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
   margin-top: 10px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 400ms 0ms, padding 400ms 400ms;
+  /* transition-property: background-color;
+  transition-duration: 2000ms;
+  transition-delay: 0ms 2000ms; */
+  /* transition: background-color 2000ms 0ms ease-in-out, border-radius 2000ms 2000ms ease-in-out; */
+}
+
+.related-list li {
+  /* background-color: yellow; */
+  height: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.related-list a {
+  /* background-color: pink; */
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.related-list:hover,
+.related-list:focus {
+  height: 147px;
+  padding: 10px 0;
 }
 
 /* 슬로건 */
